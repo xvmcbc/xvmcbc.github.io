@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Akronim');
 table {
 border: 1px solid black;
 border-collapse: collapse;
+  font-family: 'Akronim', cursive;
 }
 
 thead {
