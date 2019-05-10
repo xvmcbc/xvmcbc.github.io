@@ -7,6 +7,6 @@ thead {
 background-color: #cce6ff;
 }
 
-tr:nth-child(odd) {
-background-color:#ddff99;
+tbody:tr:nth-child(odd) {
+background-color: #ddff99;
 }
