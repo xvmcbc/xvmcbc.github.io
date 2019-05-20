@@ -60,3 +60,29 @@ h5{
     margin-right: auto;
   }
 
+#nav-select {
+    visibility: hidden;
+}
+
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+/*@media (max-width: 480px)*/
+@media (max-width: 600px) {
+
+    .collapse navbar-collapse{
+        background: cornflowerblue;
+    }
+
+    .post {
+      margin-right: 30px;
+      margin-left: 30px;
+    }
+  
+    .navbar ul {
+      visibility: hidden;
+    }
+  
+    #nav-select {
+      visibility: visible;
+    }
+  }
+
