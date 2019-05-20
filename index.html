@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>Weather Data Analysis</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="Index.html" class="navbar-brand">Weather and Lattitude</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Visualizations</a>
+                    <div class="dropdown-menu">
+                        <a href="LatvsTemp.html" target="content" class="dropdown-item">Temperature (F) vs. Lattitude</a>
+                        <a href="CloudvsLat.html" target="content" class="dropdown-item">Cloudiness (%) vs. Lattitude</a>
+                        <a href="LatvsHumid.html" target="content" class="dropdown-item">Humidity (%) vs. Lattitude</a>
+                        <a href="WindvsLat.html" target="content" class="dropdown-item">Wind Speed (mph) vs. Lattitude</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="Comparisons.html" class="nav-link">Comparisons</a></li>
+                <li class="nav-item"><a href="Data.html" class="nav-link">Data</a></li>
+            </ul>
+        </div>
+        <select id="nav-select" onchange="location = this.value;">
+            <option value="index.html">Visualizations</option>
+            <option value="LatVsTemp.html">&nbsp;Temperature (F) vs. Lattitude</option>
+            <option value="CloudvsLat.html">&nbsp;Cloudiness (%) vs. Lattitude</option>
+            <option value="LatvsHumid.html">&nbsp;Humidity (%) vs. Lattitude</option>
+            <option value="WindvsLat.html">&nbsp;Wind Speed (mph) vs. Lattitude</option>
+            <option value="comparisons.html">Comparisons</option>
+            <option value="data.html">Data</option>
+        </select>
+    </nav>
+    
+
+    <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <div class="boxw white">
+                        <iframe name="content" src="start.html"  frameborder=0 width="500" height="800" scrolling="no">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="boxw white">
+                        <p></p>
+                        <h4>The visualizations:</h4><br>
+                        <table>
+                            <tr><th><a href="LatvsTemp.html" target="content">Temperature (F) vs. Lattitude</a>
+                            <img src="Images\LatVsTemp.png" alt="LatvsTemp" width="200" height="132"></th>
+                            <th><a href="LatvsHumid.html" target="content">Humidity (%) vs. Lattitude</a>
+                            <img src="Images\LatVsHumidity.png" alt="LatvsHumidity" width="200" height="132"></th></tr>
+                            <tr><th><a href="CloudvsLat.html" target="content">Cloudiness (%) vs. Lattitude</a>
+                            <img src="Images\LatVsCloudiness.png" alt="LatvsCloudiness" width="200" height="132"></th>
+                            <th><a href="WindvsLat.html" target="content">Wind Speed (mph) vs. Lattitude</a>
+                            <img src="Images\LatVsWindSpeed.png" alt="LatvsTemp" width="200" height="132"></th></tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+</body>
+</html>
